@@ -16,4 +16,9 @@ describe("Person class and all its methods", () => {
     person.mercuryAge();
     expect(person.mercury).toEqual(87.5)
   });
+
+  test("determins age on venus", () => {
+    person.venusAge();
+    expect(person.venusAge).toEqual(87.5)
+  });
 })
