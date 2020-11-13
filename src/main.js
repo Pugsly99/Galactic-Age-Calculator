@@ -4,8 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 
 $(document).ready(function () {
-  // $("form#newPerson").submit(function(event) {
-  //   event.preventDefault();
+  let person = new Person(name, age);
+  
+  $("form#newPerson").submit(function(event) {
+    event.preventDefault();
   
   //   let person = new Person(name, age);
   //   this.name = $("input#name").val();
@@ -17,7 +19,7 @@ $(document).ready(function () {
   //   console.log(this.name);
   //   console.log(this.age);
   
-  // });
+  });
 })
 
 

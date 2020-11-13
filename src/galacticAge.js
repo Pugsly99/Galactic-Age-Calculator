@@ -1,4 +1,4 @@
-//Business Logic
+
 export default class Person {
 
   constructor(name, age) {
@@ -86,21 +86,4 @@ export default class Person {
   }
 }
 
-//UI
-// $(document).ready(function () {
-//   $("form#newPerson").submit(function(event) {
-//     event.preventDefault();
-  
-//     let person = new Person();
-//     this.name = $("input#name").val();
-//     this.age = $("input#num").val();
-
-//     let venus = person.venusAge
-
-//     console.log(venus)
-//     console.log(this.name);
-//     console.log(this.age);
-  
-//   });
-// })
 
