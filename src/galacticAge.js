@@ -44,7 +44,7 @@ export default class Person {
   }
 
   marsAge(){
-    let marsYear = .62;
+    let marsYear = 1.88;
     let yearsLeft = 0;
     let planetAge = this.age / marsYear;
     let planetLife = this.lifeExpect % marsYear;
