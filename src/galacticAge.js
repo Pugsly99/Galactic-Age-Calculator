@@ -4,26 +4,33 @@ export default class Person {
     this.name = name;
     this.age = age;
     this.lifeExpect = 78.5;
+    
     this.mercury = 0;
+    this.mercuryYearleft = 0;
+
     this.venus = 0;
+    this.venusYearleft = 0;
+
     this.mars = 0;
+    this.marsYearleft = 0;
+
     this.jupiter = 0;
+    this.jupiterYearleft = 0;
   }
 
   mercuryAge(){
     let mercuryYear = .24;
-    let yearsLeft = 0;
-    let planetAge = this.age / mercuryYear;
+    this.mercury = this.age / mercuryYear;
     let planetLife = this.lifeExpect % mercuryYear;
 
-    if(planetAge < planetLife) {
-      this.mercury = planetAge;
-      yearsLeft = planetLife - planetAge
-      //console.log("Your ${planetAge} years old on Mercury and you have ${yearsLeft} years left!")
-    } else if(planetAge > planetLife) {
-      this.mercury = planetAge;
-      yearsLeft = planetAge - planetLife
-      //console.log("Your ${planetAge} years old on Mercury and thats ${yearsLeft} years more than your expected to live!")
+    if(this.mercury < planetLife) {
+      this.mercury 
+      this.mercuryYearleft = planetLife - this.mercury
+      console.log("Your ${this.mercury} years old on Mercury and you have ${this.mercuryYearleft} years left!")
+    } else if(this.mercury > planetLife) {
+      this.mercury 
+      this.mercuryYearleft = this.mercury - planetLife
+      console.log("Your ${this.mercury} years old on Mercury and thats ${this.mercuryYearleft} years more than your expected to live!")
     }
   }
   venusAge(){
