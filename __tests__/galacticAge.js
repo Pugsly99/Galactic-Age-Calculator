@@ -10,5 +10,6 @@ describe("Person class and all its methods", () => {
   test("create new person object with arguments", () => {
     expect(person.name).toEqual("Ryland");
     expect(person.age).toEqual(22);
-  })
+  });
+  
 })
