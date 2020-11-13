@@ -25,10 +25,22 @@ export default class Person {
       yearsLeft = planetAge - planetLife
       //console.log("Your ${planetAge} years old on Mercury and thats ${yearsLeft} years more than your expected to live!")
     }
-
   }
   venusAge(){
+    let venusYear = .62;
+    let yearsLeft = 0;
+    let planetAge = this.age / venusYear;
+    let planetLife = this.lifeExpect % venusYear;
 
+    if(planetAge < planetLife) {
+      this.venus = planetAge;
+      yearsLeft = planetLife - planetAge
+      //console.log("Your ${planetAge} years old on Venus and you have ${yearsLeft} years left!")
+    } else if(planetAge > planetLife) {
+      this.venus = planetAge;
+      yearsLeft = planetAge - planetLife
+      //console.log("Your ${planetAge} years old on Venus and thats ${yearsLeft} years more than your expected to live!")
+    }
   }
 
   marsAge(){
