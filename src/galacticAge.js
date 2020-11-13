@@ -87,16 +87,20 @@ export default class Person {
 }
 
 //UI
-$(document).ready(function () {
-  $("form#newPerson").submit(function(event) {
-    event.preventDefault();
+// $(document).ready(function () {
+//   $("form#newPerson").submit(function(event) {
+//     event.preventDefault();
   
-    let person = new Person();
-    this.name = $("input#name").val();
-    this.age = $("input#num").val();
-    console.log(this.name);
-    console.log(this.age);
+//     let person = new Person();
+//     this.name = $("input#name").val();
+//     this.age = $("input#num").val();
+
+//     let venus = person.venusAge
+
+//     console.log(venus)
+//     console.log(this.name);
+//     console.log(this.age);
   
-  });
-})
+//   });
+// })
 
