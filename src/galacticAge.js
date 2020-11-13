@@ -22,7 +22,7 @@ export default class Person {
     let mercuryYear = .24;
     this.mercury = this.age / mercuryYear;
     let planetLife = this.lifeExpect / mercuryYear;
-    console.log(planetLife)
+    
     if(this.mercury < planetLife) {
       this.mercury 
       this.mercuryYearleft = planetLife - this.mercury
@@ -37,7 +37,7 @@ export default class Person {
     let venusYear = .62;
     let yearsLeft = 0;
     let planetAge = this.age / venusYear;
-    let planetLife = this.lifeExpect % venusYear;
+    let planetLife = this.lifeExpect / venusYear;
 
     if(planetAge < planetLife) {
       this.venus = planetAge;
@@ -54,7 +54,7 @@ export default class Person {
     let marsYear = 1.88;
     let yearsLeft = 0;
     let planetAge = this.age / marsYear;
-    let planetLife = this.lifeExpect % marsYear;
+    let planetLife = this.lifeExpect / marsYear;
 
     if(planetAge < planetLife) {
       this.mars = planetAge;
@@ -71,7 +71,7 @@ export default class Person {
     let jupiterYear = 11.86;
     let yearsLeft = 0;
     let planetAge = this.age / jupiterYear;
-    let planetLife = this.lifeExpect % jupiterYear;
+    let planetLife = this.lifeExpect / jupiterYear;
 
     if(planetAge < planetLife) {
       this.jupiter = planetAge;

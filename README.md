@@ -35,7 +35,7 @@
 | it will returns their age in Venus years| 21 % .62 | 33.9 |
 | it will returns their age in Mars years| 21 % 1.88 | 11.2 |
 | it will returns their age in Jupiter years| 21 % 11.86 | 1.8 |
-| it will returns their life expectancy on Mercury | 327.3 - 87.5 | 239.8 |
+| it will returns their life expectancy on Mercury | 327.3 - 87.5 | 239.6 |
 | it will returns their life expectancy on Venus | 126.7 - 33.9 | 92.8 |
 | it will returns their life expectancy on Mars | 41.8 - 11.2 | 30.6 |
 | it will returns their life expectancy on Jupiter| 6.6  - 1.8 | 4.8 |
