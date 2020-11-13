@@ -51,18 +51,17 @@ export default class Person {
 
   marsAge(){
     let marsYear = 1.88;
-    let yearsLeft = 0;
-    let planetAge = this.age / marsYear;
-    let planetLife = this.lifeExpect / marsYear;
-
-    if(planetAge < planetLife) {
-      this.mars = planetAge;
-      yearsLeft = planetLife - planetAge
-      //console.log("Your ${planetAge} years old on Mars and you have ${yearsLeft} years left!")
-    } else if(planetAge > planetLife) {
-      this.mars = planetAge;
-      yearsLeft = planetAge - planetLife
-      //console.log("Your ${planetAge} years old on Mars and thats ${yearsLeft} years more than your expected to live!")
+    this.mars = this.age / marsYear;
+    let planetLife = this.marsYearleft / marsYear;
+    
+    if(this.mars < planetLife) {
+      this.mars 
+      this.marsYearleft = planetLife - this.mars
+      console.log("Your ${this.mars} years old on Mercury and you have ${this.marsYearleft} years left!")
+    } else if(this.mars > planetLife) {
+      this.mars 
+      this.marsYearleft = this.mars - planetLife
+      console.log("Your ${this.mars} years old on Mercury and thats ${this.marsYearleft} years more than your expected to live!")
     }
   }
  
