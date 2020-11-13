@@ -13,7 +13,7 @@ export default class Person {
   mercuryAge(){
     let mercuryYear = .24;
     let yearsLeft = 0;
-    let planetAge = this.age % mercuryYear;
+    let planetAge = this.age / mercuryYear;
     let planetLife = this.lifeExpect % mercuryYear;
 
     if(planetAge < planetLife) {
