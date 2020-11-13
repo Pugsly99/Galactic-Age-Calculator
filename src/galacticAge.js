@@ -1,3 +1,4 @@
+//Business Logic
 export default class Person {
 
   constructor(name, age) {
@@ -35,17 +36,20 @@ export default class Person {
   }
   venusAge(){
     let venusYear = .62;
+    let outcome;
     this.venus = this.age / venusYear;
     let planetLife = this.lifeExpect / venusYear;
     
     if(this.venus < planetLife) {
       this.venus 
       this.venusYearleft = planetLife - this.venus
-      console.log("Your ${this.venus} years old on Mercury and you have ${this.venusYearleft} years left!")
+      outcome = ("Your ${this.venus} years old on Mercury and you have ${this.venusYearleft} years left!")
+      return outcome
     } else if(this.venus > planetLife) {
       this.venus 
       this.venusYearleft = this.venus - planetLife
-      console.log("Your ${this.venus} years old on Mercury and thats ${this.venusYearleft} years more than your expected to live!")
+      outcome = ("Your ${this.venus} years old on Mercury and thats ${this.venusYearleft} years more than your expected to live!")
+      return outcome
     }
   }
 
@@ -81,3 +85,13 @@ export default class Person {
     }
   }
 }
+
+//UI
+$("form#firstName").submit(function() {
+  let person = new Person();
+  this.name = $("input#name").val();
+  this.age = $("input#num").val();
+  console.log(this.name);
+  console.log(this.age);
+
+});
