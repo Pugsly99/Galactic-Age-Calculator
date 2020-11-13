@@ -19,12 +19,11 @@ export default class Person {
     if(planetAge < planetLife) {
       this.mercury = planetAge;
       yearsLeft = planetLife - planetAge
-      console.log("Your ${planetAge} years old on Mercury and you have ${yearsLeft} years left!")
-
+      //console.log("Your ${planetAge} years old on Mercury and you have ${yearsLeft} years left!")
     } else if(planetAge > planetLife) {
       this.mercury = planetAge;
       yearsLeft = planetAge - planetLife
-      console.log("Your ${planetAge} years old on Mercury and thats ${yearsLeft} years more than your expected to live!")
+      //console.log("Your ${planetAge} years old on Mercury and thats ${yearsLeft} years more than your expected to live!")
     }
 
   }
