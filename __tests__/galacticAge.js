@@ -19,6 +19,6 @@ describe("Person class and all its methods", () => {
 
   test("determins age on venus", () => {
     person.venusAge();
-    expect(Math.round(person.venus * 10) / 10).toEqual(87.5)
+    expect(Math.round(person.venus * 10) / 10).toEqual(33.9)
   });
 })
