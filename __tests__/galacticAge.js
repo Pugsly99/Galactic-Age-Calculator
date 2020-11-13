@@ -14,11 +14,11 @@ describe("Person class and all its methods", () => {
   
   test("determins age on mercury", () => {
     person.mercuryAge();
-    expect(person.mercury).toEqual(87.5)
+    expect(Math.round(person.mercury * 10) / 10).toEqual(87.5)
   });
 
   test("determins age on venus", () => {
     person.venusAge();
-    expect(person.venusAge).toEqual(87.5)
+    expect(Math.round(person.venus * 10) / 10).toEqual(87.5)
   });
 })
