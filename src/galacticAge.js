@@ -59,7 +59,7 @@ export default class Person {
       //console.log("Your ${planetAge} years old on Mars and thats ${yearsLeft} years more than your expected to live!")
     }
   }
-
+ 
   jupiterAge(){
     let jupiterYear = 11.86;
     let yearsLeft = 0;
@@ -74,5 +74,6 @@ export default class Person {
       this.jupiter = planetAge;
       yearsLeft = planetAge - planetLife
       //console.log("Your ${planetAge} years old on Jupiter and thats ${yearsLeft} years more than your expected to live!")
+    }
   }
 }
