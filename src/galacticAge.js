@@ -52,7 +52,7 @@ export default class Person {
   marsAge(){
     let marsYear = 1.88;
     this.mars = this.age / marsYear;
-    let planetLife = this.marsYearleft / marsYear;
+    let planetLife = this.lifeExpect / marsYear;
     
     if(this.mars < planetLife) {
       this.mars 
