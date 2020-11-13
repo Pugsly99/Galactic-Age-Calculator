@@ -14,23 +14,24 @@ describe("Person class and all its methods", () => {
   
   test("determins age on mercury", () => {
     person.mercuryAge();
-    expect(Math.round(person.mercury * 10) / 10).toEqual(87.5)
-    expect(Math.round(person.mercuryYearleft * 10) / 10).toEqual(239.6)
+    expect(Math.round(person.mercury * 10) / 10).toEqual(87.5);
+    expect(Math.round(person.mercuryYearleft * 10) / 10).toEqual(239.6);
   });
 
   test("determins age on venus", () => {
     person.venusAge();
-    expect(Math.round(person.venus * 10) / 10).toEqual(33.9)
-    expect(Math.round(person.venusYearleft * 10) / 10).toEqual(92.7)
+    expect(Math.round(person.venus * 10) / 10).toEqual(33.9);
+    expect(Math.round(person.venusYearleft * 10) / 10).toEqual(92.7);
   });
 
   test("determins age on mars", () => {
     person.marsAge();
-    expect(Math.round(person.mars * 10) / 10).toEqual(11.2)
+    expect(Math.round(person.mars * 10) / 10).toEqual(11.2);
+    expect(Math.round(person.marsYearleft * 10) / 10).toEqual(92.7);
   });
 
   test("determins age on jupiter", () => {
     person.jupiterAge();
-    expect(Math.round(person.jupiter * 10) / 10).toEqual(1.8)
+    expect(Math.round(person.jupiter * 10) / 10).toEqual(1.8);
   });
 })
