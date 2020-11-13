@@ -30,7 +30,16 @@
 
 | Behavior | Input | Output |
 |-------------------------------------------------|--------|--------|
-| | | |
+| it will take a users name and age and create object|Ryland, 21 | this.name = Ryland this.age = 21|
+| it will returns their age in Mercury years| 21 % .24 | 87.5 |
+| it will returns their age in Venus years| 21 % .62 | 33.9 |
+| it will returns their age in Mars years| 21 % 1.88 | 11.2 |
+| it will returns their age in Jupiter years| 21 % 11.86 | 1.8 |
+| it will returns their life expectancy on Mercury | 327.3 - 87.5 | 239.8 |
+| it will returns their life expectancy on Venus | 126.7 - 33.9 | 92.8 |
+| it will returns their life expectancy on Mars | 41.8 - 11.2 | 30.6 |
+| it will returns their life expectancy on Jupiter| 6.6  - 1.8 | 4.8 |
+| If a user has already surpassed the average life expectancy | 100 earth years | 100 - this.age |
 
 
 
