@@ -27,7 +27,7 @@ describe("Person class and all its methods", () => {
   test("determins age on mars", () => {
     person.marsAge();
     expect(Math.round(person.mars * 10) / 10).toEqual(11.2);
-    expect(Math.round(person.marsYearleft * 10) / 10).toEqual(92.7);
+    expect(Math.round(person.marsYearleft * 10) / 10).toEqual(30.6);
   });
 
   test("determins age on jupiter", () => {
