@@ -22,29 +22,31 @@ export default class Person {
   mercuryAge(){
     let mercuryYear = .24;
     this.mercury = this.age / mercuryYear;
+    this.mercury = Math.round(this.mercury * 10) / 10;
     let planetLife = this.lifeExpect / mercuryYear;
     
     if(this.mercury < planetLife) {
       this.mercuryYearleft = planetLife - this.mercury
-      console.log("Your ${this.mercury} years old on Mercury and you have ${this.mercuryYearleft} years left!")
+      console.log(`Your ${this.mercury} years old on Mercury and you have ${this.mercuryYearleft} years left!`)
     } else if(this.mercury > planetLife) {
       this.mercuryYearleft = this.mercury - planetLife
-      console.log("Your ${this.mercury} years old on Mercury and thats ${this.mercuryYearleft} years more than your expected to live!")
+      console.log(`Your ${this.mercury} years old on Mercury and thats ${this.mercuryYearleft} years more than your expected to live!`)
     }
   }
   venusAge(){
     let venusYear = .62;
     let outcome;
     this.venus = this.age / venusYear;
+    this.venus = Math.round(this.venus * 10) / 10;
     let planetLife = this.lifeExpect / venusYear;
     
     if(this.venus < planetLife) {
       this.venusYearleft = planetLife - this.venus
-      outcome = ("Your ${this.venus} years old on Mercury and you have ${this.venusYearleft} years left!")
+      outcome = (`Your ${this.venus} years old on Mercury and you have ${this.venusYearleft} years left!`)
       return outcome
     } else if(this.venus > planetLife) {
       this.venusYearleft = this.venus - planetLife
-      outcome = ("Your ${this.venus} years old on Mercury and thats ${this.venusYearleft} years more than your expected to live!")
+      outcome = (`Your ${this.venus} years old on Mercury and thats ${this.venusYearleft} years more than your expected to live!`)
       return outcome
     }
   }
@@ -52,6 +54,7 @@ export default class Person {
   marsAge(){
     let marsYear = 1.88;
     this.mars = this.age / marsYear;
+    this.mars = Math.round(this.mars * 10) / 10;
     let planetLife = this.lifeExpect / marsYear;
 
     if(this.mars < planetLife) {
@@ -66,6 +69,7 @@ export default class Person {
   jupiterAge(){
     let jupiterYear = 11.86;
     this.jupiter = this.age / jupiterYear;
+    this.jupiter = Math.round(this.jupiter * 10) / 10;
     let planetLife = this.lifeExpect / jupiterYear;
     
     if(this.jupiter < planetLife) {
