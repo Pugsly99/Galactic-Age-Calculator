@@ -1,38 +1,51 @@
 import Person from "./../src/galacticAge.js";
 
 describe("Person class and all its methods", () => {
-  let person;
+  let me;
+  let dad;
 
   beforeEach(() => {
-    person = new Person ("Ryland", 21);
+    me = new Person ("Ryland", 21);
+    dad = new Person ("Chad", 103);
   });
 
-  test("create new person object with arguments", () => {
-    expect(person.name).toEqual("Ryland");
-    expect(person.age).toEqual(21);
+  test("create new me object with arguments", () => {
+    expect(me.name).toEqual("Ryland");
+    expect(me.age).toEqual(21);
+  });
+
+  test("create new dad object with arguments", () => {
+    expect(dad.name).toEqual("Chad");
+    expect(dad.age).toEqual(103);
   });
   
-  test("determins age on mercury", () => {
-    person.mercuryAge();
-    expect (person.mercury).toEqual(87.5);
-    expect(person.mercuryYearleft).toEqual(239.6);
+  test("determins me age on mercury", () => {
+    me.mercuryAge();
+    expect (me.mercury).toEqual(87.5);
+    expect(me.mercuryYearleft).toEqual(239.6);
+  });
+
+  test("determins dad age on mercury", () => {
+    dad.mercuryAge();
+    expect (dad.mercury).toEqual(87.5);
+    expect(dad.mercuryYearleft).toEqual(239.6);
   });
 
   test("determins age on venus", () => {
-    person.venusAge();
-    expect(person.venus).toEqual(33.9);
-    expect(person.venusYearleft).toEqual(92.7);
+    me.venusAge();
+    expect(me.venus).toEqual(33.9);
+    expect(me.venusYearleft).toEqual(92.7);
   });
 
   test("determins age on mars", () => {
-    person.marsAge();
-    expect(person.mars).toEqual(11.2);
-    expect(person.marsYearleft).toEqual(30.6);
+    me.marsAge();
+    expect(me.mars).toEqual(11.2);
+    expect(me.marsYearleft).toEqual(30.6);
   });
 
   test("determins age on jupiter", () => {
-    person.jupiterAge();
-    expect(person.jupiter).toEqual(1.8);
-    expect(person.jupiterYearleft).toEqual(4.8);
+    me.jupiterAge();
+    expect(me.jupiter).toEqual(1.8);
+    expect(me.jupiterYearleft).toEqual(4.8);
   });
 })
